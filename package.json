@@ -1,0 +1,36 @@
+{
+  "name": "parkprojecettwo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "client:build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isikveysi/parkprojecettwo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isikveysi/parkprojecettwo/issues"
+  },
+  "homepage": "https://github.com/isikveysi/parkprojecettwo#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.3.1",
+    "hpp": "^0.2.3",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "slugify": "^1.4.6",
+    "body-parser": "^1.19.0",
+    "xss-clean": "^0.1.1"
+  }
+}
